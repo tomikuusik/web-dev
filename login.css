@@ -1,0 +1,39 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: lightblue;
+    width: 100%;
+}
+
+main {
+    margin-top: 30%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#login {
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5em;
+    align-items: center;
+}
+#submit-btn {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    border: white;
+    margin-top: 1em;
+    width: 8em;
+    height: 2em;
+}
+main > a {
+    color: lightblue;
+}
+main h1:hover {
+    color: rebeccapurple;
+}
+div input {
+    margin: 0.5em;
+}
