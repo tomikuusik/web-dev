@@ -1,0 +1,52 @@
+body {
+	background: linear-gradient(90deg, lightblue 25%, white 25%, white 75%, lightblue 75%);
+	display: flex;
+}
+
+main {
+	display: flex;
+	background-color: white;
+	margin-left: 35%;
+	margin-right: 35%;
+	flex-direction: column;
+}
+
+.boxes {
+	padding: 5px;
+	box-shadow: -2px 2px lightgray, 1px -2px lightgray;
+	border: outset 1px;
+    border-bottom:0.75em solid transparent;
+}
+
+.boxes ~ .boxes{
+	margin-top: 10px;
+}
+
+img {
+	height: 10%;
+	width: 10%;
+	padding-top: 5px;
+	display: block;
+	float: left;
+}
+
+.boxes > p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+button{
+	padding-top: 5px;
+	background-color: aqua;
+}
+
+.date {
+	margin-right: 5%;
+	font-size: 80%;
+	color: grey;
+}
+
+.date + img {
+	height: 60%;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+}
