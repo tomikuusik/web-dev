@@ -1,10 +1,41 @@
 body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	background: linear-gradient(90deg, lightblue 25%, white 25%, white 75%, lightblue 75%);
-	display: flex;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+header {
+	margin: 0;
+	align-items: center;
+	top: 0;
+	height: 100px;
+	padding-left: 30%;
+	padding-right: 30%;
+	background-color: white;
+	margin-bottom: 5%;
+	display: inline-flex;
+	flex-direction: column;
+	/** flex-direction: row-reverse; **/
+	align-items: flex-end;
+}
+
+#contex-menu {
+	display: none;
+	background-color: lightblue;
+	padding: 0 5%;
+}
+
+div > img {
+	width: 50px;
+	height: 50px;
 }
 
 main {
-	display: flex;
+	display: inline-flex;
+	flex-direction: column;
 	background-color: white;
 	margin-left: 35%;
 	margin-right: 35%;
