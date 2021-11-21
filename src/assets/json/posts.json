@@ -1,14 +1,5 @@
 [
     {
-        "id":1,
-        "img_src":"../assets/img/hand.svg",
-        "img_alt":"Waving hand",
-        "title":"Heading 1",
-        "content":"Maecenas mi tellus, scelerisque non rhoncus non, tempus sit amet quam. Etiam lacinia metus at nulla molestie, quis commodo magna bibendum. Nam semper semper vehicula. Morbi non justo efficitur, consequat velit nec, sodales metus. Ut at sapien accumsan elit aliquet imperdiet. Fusce consectetur sed ipsum in interdum. In egestas finibus enim, in interdum nisi.",
-        "date": "10/10/2010",
-        "likes":2
-    },
-    {
         "id":2,
         "img_src":"../assets/img/helmet.svg",
         "img_alt":"Yellow safety helmet",
@@ -28,8 +19,8 @@
     },
     {
         "id":4,
-        "img_src":"../assets/img/gear.svg",
-        "img_alt":"Gear",
+        "img_src":"../assets/img/hand.svg",
+        "img_alt":"Hand",
         "title":"Heading 4",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet massa dui. In accumsan felis viverra feugiat porttitor. Nunc at faucibus libero, eget venenatis metus. Ut molestie diam id condimentum rutrum",
         "date": "10/10/2010",

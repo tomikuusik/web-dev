@@ -4,6 +4,7 @@
             <i :class=link.icon></i>
             {{ link.name }}
         </a>
+        <router-link to="/contact">contact</router-link>
     </footer>
 </template>
 <script lang='ts'>

@@ -29,7 +29,7 @@
     grid-area: heading;
   }
   .info {
-    background-color: #f0f0f0;
+    // background-color: #f0f0f0;
     padding: 0.5em 1em;
     display: inline-grid;
     grid-template-columns: [date] min-content [empty] auto [counter] min-content [image] 3ch;
@@ -39,15 +39,15 @@
     justify-items: center;
     grid-area: info;
     button, img{
-      width: 3ch;
-      height: 3ch;
+      width: 2ch;
+      height: 2ch;
       grid-column-start: image;
       :hover {
         cursor: grabbing;
       }
       :active {
-        width: 2.5ch;
-        height: 2.5ch;
+        width: 1.5ch;
+        height: 1.5ch;
         cursor: grabbing;
       }
     }
@@ -59,8 +59,7 @@
     }
     p {
       display: inline-block;
-      font-size: 2.5ch;
-      height: 2.5ch;
+      font-size: 1.5ch;
       font-weight: bold;
       grid-column-start: counter;
       margin: 0 0.3em;

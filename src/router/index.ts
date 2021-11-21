@@ -22,6 +22,12 @@ const routes: Array<RouteRecordRaw> = [
     meta: {theme: 'dark'},
     component: () =>
       import("../views/LoginView.vue"),
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: () =>
+      import("../views/ContactView.vue"),
   }
 ];
 

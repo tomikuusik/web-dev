@@ -12,13 +12,18 @@ export default createStore({
       state.theme = theme;
     },
     like(state, postId) {
-      const objIndex = posts.findIndex((x) => {return x.id == postId})
-      const objLikes = Number(posts[objIndex].likes)
-      const newObj = posts[objIndex]
+      const objIndex = state.posts.findIndex((x) => {return x.id == postId})
+      const objLikes = Number(state.posts[objIndex].likes)
+      const newObj = state.posts[objIndex]
       newObj.likes += 1
-      posts.splice(objIndex, 1, newObj)
-     console.log(posts)
-     console.log('incemented')
+      state.posts.splice(objIndex, 1, newObj)
+    },
+    clearLikes(state) {
+      for (let i = 0; i < posts.length; i++) {
+        const newObj = state.posts[i]
+        newObj.likes = 0
+        state.posts.splice(i, 1, newObj)
+      }
     }
   },
   actions: {},

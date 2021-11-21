@@ -1,7 +1,11 @@
 <template>
   <main class="page">
     <section class="content">
-      <h1>This is an about page</h1>
+      <ul>
+        <li>Some name will be inserted here in the end</li>
+        <li>+372 1234 5678</li>
+        <li>example@domain.com</li>
+      </ul>
     </section>
   </main>
 </template>
