@@ -1,0 +1,108 @@
+header {
+  grid-row: 1;
+  grid-column: 1;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  height: 100%;
+  grid-row: 1 / span 3;
+  grid-column: 1;
+}
+footer {
+  grid-area: footer;
+}
+.login {
+  height: 100%;
+  padding-top: 30vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(25, 25, 25, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(25, 25, 25, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(25, 25, 25, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#191919",GradientType=1);
+}
+.login > input {
+  background-color: rgba(40, 40, 40, 1);
+  color: white;
+  font-size: 1.3rem;
+  border-style: solid;
+  width: 20vw;
+  min-width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-color: rgba(100, 100, 100, 0.3);
+  box-shadow: 1px 1px 1rem black;
+}
+.login > input::placeholder {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.login > h1 {
+  font-size: 4em;
+}
+.login > p {
+  margin-top: 10vh;
+  font-size: 2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .login > input {
+    width: 80vw;
+  }
+  .login {
+    background-color: rgba(40, 40, 40, 1);
+    padding-top: 35vh;
+  }
+  .login > h1 {
+    font-size: 2rem;
+  }
+  .login > p {
+    margin-top: 10vh;
+    font-size: 1rem;
+  }
+}
+
+// footer {
+//   background: rgb(15, 15, 15);
+//   background: -moz-linear-gradient(
+//     135deg,
+//     rgba(15, 15, 15, 1) 0%,
+//     rgba(0, 0, 0, 1) 100%
+//   );
+//   background: -webkit-linear-gradient(
+//     135deg,
+//     rgba(15, 15, 15, 1) 0%,
+//     rgba(0, 0, 0, 1) 100%
+//   );
+//   background: linear-gradient(
+//     135deg,
+//     rgba(15, 15, 15, 1) 0%,
+//     rgba(0, 0, 0, 1) 100%
+//   );
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f0f",endColorstr="#000000",GradientType=1);
+// }
+// footer > a {
+//   color: rgba(255, 255, 255, 1);
+// }
+// footer > a > i {
+//   color: rgba(255, 255, 255, 1);
+// }

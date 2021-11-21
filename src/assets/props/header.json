@@ -1,0 +1,10 @@
+{
+    "title":{ "type":"String", "default":"Tomi Kuusik"},
+    "links":{ "type":"Array", "default":
+        [
+        {"name":"aboutme", "target":"/aboutme"},
+        {"name":"contact", "target":"/login"},
+        {"name":"login", "target":"/login"}
+        ]
+    }
+}
