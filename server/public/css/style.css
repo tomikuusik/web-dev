@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: linear-gradient(90deg, #1778BD 25%, white 25%, white 75%, #1778BD 75%);
+	display: inline-flex;
+	flex-direction: column;
+}
+
+nav {
+	margin: 0;
+	align-items: center;
+	top: 0;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border: 3px solid;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 30px;
+	font-size: 50px;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	background: lightgray;
+	border-radius: 5px;
+	padding: 10px 30px;
+	font-size: 20px;
+}
+
+.nav {
+	text-decoration: underline;
+	text-transform: uppercase;
+	padding: 0 30px;
+	color: black;
+	font-weight: 1000;
+}
+
+main {
+	display: inline-flex;
+	flex-direction: column;
+	background-color: white;
+	margin-left: 35%;
+	margin-right: 35%;
+	flex-direction: column;
+}
+
+.boxes {
+	padding: 5px;
+	box-shadow: -2px 2px lightgray, 1px -2px lightgray;
+	border: outset 1px;
+    border-bottom:0.75em solid transparent;
+}
+
+.boxes ~ .boxes{
+	margin-top: 10px;
+}
+
+img {
+	height: 10%;
+	width: 10%;
+	padding-top: 5px;
+	display: block;
+	float: left;
+}
+
+.boxes > p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+button{
+	display: inline-block;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 4px;
+	font-size: 13px;
+	height: 30px;
+	background-color: #0000000d;
+	color: #0e0e10;
+	padding: 0 10px;
+}
+
+a {
+	color: #000;
+    text-decoration: none;
+}
+
+.date {
+	margin-right: 5%;
+	font-size: 80%;
+	color: grey;
+}
+
+.date + img {
+	height: 60%;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+}
+
+#posts {
+	list-style-type:none
+}
+
+.posts-list {
+	margin: auto;
+  	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.singlepost {
+	width: 30%;
+	margin: auto;
+	padding: 20px;
+	border: 3px solid #000;
+	border-radius: 5px;
+	color: #000;
+    text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.like {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	margin-top: 15px;
+}
+
+#clicks {
+	padding: 0 20px;
+}
+
+.delete {
+	background: lightgray;
+	margin: auto;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.create-post {
+	margin: auto;
+  	width: 50%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	text-align: center;
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+	bottom: 0;
+	background-color: white;
+	border: 3px solid;
+}

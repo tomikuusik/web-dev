@@ -1,0 +1,100 @@
+.snippet {
+    display: inline-grid;
+    width: 100%;
+    min-height: 300px;
+    height: fit-content;
+    padding: 1em;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 'heading' 'content' 'info';
+  }
+  /*
+  .snippet > img {
+    align-self: flex-start;
+    max-width: 80vw;
+    max-height: 80vw;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+  }
+  */
+  .content {
+    padding-top: 1em;
+    text-align: justify;
+    grid-area: content;
+  }
+  .snippet > h2 {
+    font-size: 2rem;
+    display: inline-flex;
+    margin: 0;
+    grid-area: heading;
+  }
+  .info {
+    // background-color: #f0f0f0;
+    padding: 0.5em 1em;
+    display: inline-grid;
+    grid-template-columns: [date] min-content [empty] auto [counter] min-content [image] 3ch;
+    grid-template-rows: minmax(3ch, max-content);
+    height: min-content;
+    align-items: center;
+    justify-items: center;
+    grid-area: info;
+    button, img{
+      width: 2ch;
+      height: 2ch;
+      grid-column-start: image;
+      :hover {
+        cursor: grabbing;
+      }
+      :active {
+        width: 1.5ch;
+        height: 1.5ch;
+        cursor: grabbing;
+      }
+    }
+    button {
+      all: unset;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    p {
+      display: inline-block;
+      font-size: 1.5ch;
+      font-weight: bold;
+      grid-column-start: counter;
+      margin: 0 0.3em;
+    }
+    .date {
+      grid-column-start: date;
+      font-weight: bold;
+    }
+  }
+  .snippet > h2 > img {
+    /*
+    display: none;
+    */
+    width: 2ch;
+    height: 2ch;
+    margin-right: 0.3ch;
+  }
+  @media only screen and (max-width: 1200px) {
+    .snippet > article {
+      // max-width: 80vw;
+      min-height: 5rem;
+    }
+    .snippet {
+      flex-direction: column;
+      align-content: flex-start;
+      // min-width: 90%;
+      max-width: fit-content;
+    }
+    /*
+    .snippet > img {
+      display: none;
+      align-self: center;
+    }
+    h2 > img {
+      display: initial;
+    }
+      */
+  }

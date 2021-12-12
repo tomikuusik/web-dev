@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>Posts</title>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs', {active: "Posts"}) %>
+    <h1>Posts page</h1>
+    <div class="posts-list">
+        <h2>All posts</h2>
+        <% if (posts.length > 0) { %>
+            <% posts.forEach(post => { %>
+                <div class="singlepost">
+                    <a href="../singlepost/<%= post.id %>">
+                        <h3 class="title">
+                            <%= post.title %>
+                        </h3>
+                        <p class="body">
+                            <%= post.body %>
+                        </p>
+                    </a>
+                    <div class="like">
+                        <button id="myButton" type="button" onClick="increaseLike()">Like</button>
+                        <p><a id="clicks">0</a></p>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>You did not post anything...</p>
+        <% } %>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+<script>
+    var clicks = 0;
+    function increaseLike() {  
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        document.getElementById("myButton").disabled = true;
+    };
+</script>
+</html>
